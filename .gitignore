@@ -1,0 +1,19 @@
+# Maven / Java
+target/
+*.class
+*.jar
+*.log
+
+# IDE and operating system
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+.DS_Store
+Thumbs.db
+
+# Local runtime state: the application stores accounts and transactions as JSON.
+data/**
+!data/.gitkeep
