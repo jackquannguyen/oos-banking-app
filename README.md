@@ -1,6 +1,6 @@
-# Bank Account Manager (FH Aachen OOS)
+# Banking Desktop Application
 
-A small desktop banking **simulation** developed as university coursework in object-oriented software development (OOS) at FH Aachen. The application demonstrates Java object-oriented design, a JavaFX GUI, custom exceptions, and local JSON-based persistence. **This is an educational application, not real banking software.**
+A JavaFX banking simulation developed for the Object-Oriented Software Development (OOS) course at FH Aachen. The application manages simulated bank accounts and transactions, demonstrating object-oriented design, custom exceptions and JSON persistence.
 
 ## Features
 
@@ -16,6 +16,15 @@ A small desktop banking **simulation** developed as university coursework in obj
 - JavaFX 19 / FXML
 - Maven
 - Gson (JSON persistence)
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[JavaFX / FXML UI] --> B[Controllers]
+    B --> C[Banking domain model]
+    C --> D[JSON persistence / Gson]
+```
 
 ## Run locally
 
@@ -46,7 +55,7 @@ data/                    Local JSON files at runtime (ignored by Git)
 
 The repository presents the **Praktikum 5 desktop application** from a broader sequence of OOS university exercises. Earlier exercises (P1–P4) and their JUnit tests are retained in the original coursework archive and are **not** part of this cleaned, runnable P5 repository. The project was developed as coursework; it should not be described as an independently commissioned product.
 
-The repository contains implementation code and UI layout, not the university's original assignment PDFs. Add a short note specifying your individual contributions and any starter code provided by the course before using this repository for job applications.
+The repository contains implementation code and UI layouts rather than the original university assignment PDFs.
 
 ## Limitations
 
